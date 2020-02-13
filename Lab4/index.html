@@ -32,8 +32,8 @@
 
       <script>
           var map = L.map('map', {
-                center: [34.0579, 100.6197],
-                zoom: 4
+                center: [35.8617, 104.1954],
+                zoom: 5
             });
 
            L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
@@ -64,8 +64,7 @@
 
                   // At each row, go through the columns/attributes to get the values
                   for (var attribute in properties) {
-                      if ( attribute != 'id' &&
-                           attribute != 'name' &&
+                      if ( attribute != 'Location' &&
                            attribute != 'latitude' &&
                            attribute != 'longitude' )   // != means NOT EQUAL TO
                                                   // These three columns are NOT recorded
@@ -103,18 +102,18 @@
                   // To alter this, the pointToLayer function needs to be used
                   pointToLayer: function(feature, latlng) {
                       return L.circleMarker(latlng, { // we use circle marker for the points
-                          fillColor: "#501e65",  // fill color of the circles
-                          color: '#501e65',      // border color of the circles
+                          fillColor: "#ff0000",  // fill color of the circles
+                          color: '#8D021F',      // border color of the circles
                           weight: 2,             // circle line weight in pixels
                           fillOpacity: 0.5       // fill opacity (0-1)
                       }).on({
                          mouseover: function(e) {
                             this.openPopup();
-                            this.setStyle({fillColor: 'green'});  // fill color turns green when mouseover
+                            this.setStyle({fillColor: 'green', color:'#8D021F' });  // fill color turns green when mouseover
                         },
                         mouseout: function(e) {
                             this.closePopup();
-                            this.setStyle({fillColor: '#501e65'});  // fill turns original color when mouseout
+                            this.setStyle({fillColor: '#ff0000'});  // fill turns original color when mouseout
                         }
                     });
                   }
@@ -125,7 +124,7 @@
             }
 
 function createSliderUI(timestamps) {
-  var sliderControl = L.control({ position: 'bottomleft'} ); // position of the slider
+  var sliderControl = L.control({ position: 'topright'} ); // position of the slider
                     // Another use of L.control :)
   sliderControl.onAdd = function(map) {
     //initialize a range slider with mousedown control
@@ -141,7 +140,7 @@ function createSliderUI(timestamps) {
     $(slider)
         .attr({
           'type':'range',
-          'max': timestamps[15],
+          'max': timestamps[timestamps.length-1],
           'min':timestamps[0],
           'step': 1, // Change this to match the numeric interval between adjacent timestamps
           'value': String(timestamps[0])
@@ -160,7 +159,7 @@ function createSliderUI(timestamps) {
 
   // Add labels to the time slider when the map first loaded
   function createTimeLabel(startTimestamp) {
-    var temporalLegend = L.control({position: 'bottomleft' }); // same position as the slider
+    var temporalLegend = L.control({position: 'topright' }); // same position as the slider
                        // One more use of L.control !!
     temporalLegend.onAdd = function(map) {
       var output = L.DomUtil.create("output", "temporal-legend");
@@ -189,7 +188,7 @@ function createSliderUI(timestamps) {
             // calculate the radius of the proportional symbols based on area
             function calcPropRadius(attributeValue) {
 
-              var scaleFactor = 0.001;   // the scale factor is used to scale the values; the units of the radius are in meters
+              var scaleFactor = 0.5;   // the scale factor is used to scale the values; the units of the radius are in meters
                                          // you may determine the scale factor accordingly based on the range of the values and the mapping scale
               var area = attributeValue * scaleFactor;
 
