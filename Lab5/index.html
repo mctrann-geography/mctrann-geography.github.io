@@ -40,8 +40,19 @@
                 ext: 'png'
         }).addTo(map); //default map
 
-        var provinces = L.geoJson(data).addTo(map);
+        var minValue = 100;
+        var minRadius = 5;
+        function calcRadius(val){
+            return 0.9*Math.pow(val/minValue,.7)*minRadius;
+        }
+        //TODO BEFORE YOU PROCEED CHECK UP WITH SHEPHARD
+        var coviddata = new.L.geoJson(coviddata).addTo(map);
+
+        var provinces = L.geoJson(data,{style:style}).addTo(map);
         var labFour = L.geoJson(datas).addTo(map);
+
+     
+        
 
         //Layer Control
         var base = {
@@ -57,6 +68,24 @@
 
         L.control.layers(base,overlay).addTo(map);
 
+        function getColor(value){
+            return value >50000000? '#54278f':
+            value >25000000? '#756bb1':
+            value >10000000? '#9e9ac8':
+            value >5000000? '#cbc9e2':
+            '#f2f0f7';
+        }
+
+        function style(feature){
+            return{
+                fillColor: getColor(feature.properties.POP10),
+                weight: 2,
+                opacity: 1,
+                color: 'gray',
+                fillOpacity: 0.9
+            };
+        }
+    
 
         </script>
     </body>
