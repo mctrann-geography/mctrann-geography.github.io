@@ -45,8 +45,19 @@
         function calcRadius(val){
             return 0.9*Math.pow(val/minValue,.7)*minRadius;
         }
-        //TODO BEFORE YOU PROCEED CHECK UP WITH SHEPHARD
-        var coviddata = new.L.geoJson(coviddata).addTo(map);
+        // var coviddata = new L.geoJson(coviddata).addTo(map);
+        var coviddata = new L.geoJson(datas, { //FIXME: datas NOT WORKING CIRCLES AREN'T POPPING UP 
+            pointToLayer: function(features, ll){
+                return L.circleMarker(ll, {
+                    color: '#000000',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#ffff8c',
+                    fillOpacity: .5,
+                    radius: calcRadius(features.properties.covid)
+                });
+            }
+        })
 
         var provinces = L.geoJson(data,{style:style}).addTo(map);
         var labFour = L.geoJson(datas).addTo(map);
