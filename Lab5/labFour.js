@@ -11,7 +11,7 @@ var datas = {
         "5": 16678,
         "6": 19665,
         "7": 22112,
-        "day8": 24953,
+        "covid": 24953,
         "Location": "Hubei"
       },
       "geometry": {
@@ -32,7 +32,7 @@ var datas = {
         "5": 895,
         "6": 954,
         "7": 1006,
-        "day8": 1075,
+        "covid": 1075,
         "Location": "Zhejiang"
       },
       "geometry": {
@@ -53,7 +53,7 @@ var datas = {
         "5": 870,
         "6": 944,
         "7": 1018,
-        "day8": 1048,
+        "covid": 1048,
         "Location": "Guangdong"
       },
       "geometry": {
@@ -74,7 +74,7 @@ var datas = {
         "5": 764,
         "6": 851,
         "7": 914,
-        "day8": 981,
+        "covid": 981,
         "Location": "Henan"
       },
       "geometry": {
@@ -95,7 +95,7 @@ var datas = {
         "5": 661,
         "6": 711,
         "7": 772,
-        "day8": 803,
+        "covid": 803,
         "Location": "Hunan"
       },
       "geometry": {
@@ -116,7 +116,7 @@ var datas = {
         "5": 530,
         "6": 591,
         "7": 665,
-        "day8": 733,
+        "covid": 733,
         "Location": "Anhui"
       },
       "geometry": {
@@ -137,7 +137,7 @@ var datas = {
         "5": 548,
         "6": 600,
         "7": 661,
-        "day8": 698,
+        "covid": 698,
         "Location": "Jiangxi"
       },
       "geometry": {
@@ -158,7 +158,7 @@ var datas = {
         "5": 366,
         "6": 389,
         "7": 411,
-        "day8": 439,
+        "covid": 439,
         "Location": "Chongqing"
       },
       "geometry": {
@@ -179,7 +179,7 @@ var datas = {
         "5": 341,
         "6": 373,
         "7": 408,
-        "day8": 426,
+        "covid": 426,
         "Location": "Jiangsu"
       },
       "geometry": {
@@ -200,7 +200,7 @@ var datas = {
         "5": 301,
         "6": 321,
         "7": 344,
-        "day8": 407,
+        "covid": 407,
         "Location": "Sichuan"
       },
       "geometry": {
@@ -221,7 +221,7 @@ var datas = {
         "5": 298,
         "6": 343,
         "7": 379,
-        "day8": 363,
+        "covid": 363,
         "Location": "Shandong"
       },
       "geometry": {
@@ -242,7 +242,7 @@ var datas = {
         "5": 253,
         "6": 274,
         "7": 297,
-        "day8": 315,
+        "covid": 315,
         "Location": "Beijing"
       },
       "geometry": {
@@ -263,7 +263,7 @@ var datas = {
         "5": 233,
         "6": 254,
         "7": 269,
-        "day8": 282,
+        "covid": 282,
         "Location": "Shanghai"
       },
       "geometry": {
@@ -284,7 +284,7 @@ var datas = {
         "5": 205,
         "6": 215,
         "7": 224,
-        "day8": 281,
+        "covid": 281,
         "Location": "Fujian"
       },
       "geometry": {
@@ -305,7 +305,7 @@ var datas = {
         "5": 190,
         "6": 227,
         "7": 277,
-        "day8": 239,
+        "covid": 239,
         "Location": "Heilongjiang"
       },
       "geometry": {
@@ -326,7 +326,7 @@ var datas = {
         "5": 165,
         "6": 173,
         "7": 184,
-        "day8": 195,
+        "covid": 195,
         "Location": "Shaanxi"
       },
       "geometry": {
@@ -347,7 +347,7 @@ var datas = {
         "5": 150,
         "6": 168,
         "7": 172,
-        "day8": 195,
+        "covid": 195,
         "Location": "Guangxi"
       },
       "geometry": {
@@ -368,7 +368,7 @@ var datas = {
         "5": 135,
         "6": 157,
         "7": 171,
-        "day8": 183,
+        "covid": 183,
         "Location": "Hebei"
       },
       "geometry": {
@@ -389,7 +389,7 @@ var datas = {
         "5": 122,
         "6": 128,
         "7": 135,
-        "day8": 138,
+        "covid": 138,
         "Location": "Yunnan"
       },
       "geometry": {
@@ -410,7 +410,7 @@ var datas = {
         "5": 89,
         "6": 100,
         "7": 111,
-        "day8": 123,
+        "covid": 123,
         "Location": "Hainan"
       },
       "geometry": {
@@ -431,7 +431,7 @@ var datas = {
         "5": 81,
         "6": 89,
         "7": 96,
-        "day8": 104,
+        "covid": 104,
         "Location": "Liaoning"
       },
       "geometry": {
@@ -452,7 +452,7 @@ var datas = {
         "5": 81,
         "6": 90,
         "7": 94,
-        "day8": 99,
+        "covid": 99,
         "Location": "Shanxi"
       },
       "geometry": {
@@ -473,7 +473,7 @@ var datas = {
         "5": 67,
         "6": 70,
         "7": 79,
-        "day8": 89,
+        "covid": 89,
         "Location": "Tianjin"
       },
       "geometry": {
@@ -494,7 +494,7 @@ var datas = {
         "5": 57,
         "6": 62,
         "7": 77,
-        "day8": 81,
+        "covid": 81,
         "Location": "Gansu"
       },
       "geometry": {
@@ -515,7 +515,7 @@ var datas = {
         "5": 64,
         "6": 69,
         "7": 70,
-        "day8": 71,
+        "covid": 71,
         "Location": "Guizhou"
       },
       "geometry": {
@@ -536,7 +536,7 @@ var datas = {
         "5": 54,
         "6": 59,
         "7": 65,
-        "day8": 69,
+        "covid": 69,
         "Location": "Jilin"
       },
       "geometry": {
@@ -557,7 +557,7 @@ var datas = {
         "5": 42,
         "6": 46,
         "7": 49,
-        "day8": 50,
+        "covid": 50,
         "Location": "Inner Mongolia"
       },
       "geometry": {
@@ -578,7 +578,7 @@ var datas = {
         "5": 34,
         "6": 40,
         "7": 43,
-        "day8": 45,
+        "covid": 45,
         "Location": "Ningxia"
       },
       "geometry": {
@@ -599,7 +599,7 @@ var datas = {
         "5": 32,
         "6": 36,
         "7": 39,
-        "day8": 42,
+        "covid": 42,
         "Location": "Xinjiang"
       },
       "geometry": {
@@ -620,7 +620,7 @@ var datas = {
         "5": 18,
         "6": 21,
         "7": 24,
-        "day8": 26,
+        "covid": 26,
         "Location": "Hong Kong SAR"
       },
       "geometry": {
@@ -641,7 +641,7 @@ var datas = {
         "5": 17,
         "6": 18,
         "7": 18,
-        "day8": 18,
+        "covid": 18,
         "Location": "Qinghai"
       },
       "geometry": {
@@ -662,7 +662,7 @@ var datas = {
         "5": 11,
         "6": 11,
         "7": 16,
-        "day8": 16,
+        "covid": 16,
         "Location": "Taipei"
       },
       "geometry": {
@@ -683,7 +683,7 @@ var datas = {
         "5": 10,
         "6": 10,
         "7": 10,
-        "day8": 10,
+        "covid": 10,
         "Location": "Macao SAR"
       },
       "geometry": {
@@ -704,7 +704,7 @@ var datas = {
         "5": 1,
         "6": 1,
         "7": 1,
-        "day8": 1,
+        "covid": 1,
         "Location": "Xizang"
       },
       "geometry": {
