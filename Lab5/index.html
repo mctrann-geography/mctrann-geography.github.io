@@ -8,6 +8,20 @@
         <script src="https://mctrann-geography.github.io/Lab5/labFour.js" ></script>
         <style type = "text/css">
         html, body {margin: 0; padding: 0; height: 100%;} #map {min-height: 100%}
+        .legend { 
+            padding: 6px 8px;
+            line-height: 18px;
+            background: rgba(255,255,255,0.9);
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+             border-radius: 5px;          
+             }           /* Optional: adjust the values below to change the appearance of the legend color boxes */ 
+              .legend i { 
+                  width: 18px;
+                  height: 18px;
+                  float: left;
+                  margin-right: 8px;
+                  opacity: 0.7;
+                  }
         </style>
     </head>
     <body>
@@ -39,32 +53,67 @@
                 maxZoom: 20,
                 ext: 'png'
         }).addTo(map); //default map
-
+        
         var minValue = 100;
         var minRadius = 5;
         function calcRadius(val){
-            return 0.9*Math.pow(val/minValue,.7)*minRadius;
+            return 0.9 * Math.pow(val / minValue, .7) * minRadius;
         }
+        var provinces = L.geoJson(data,{style:style}).addTo(map);
         // var coviddata = new L.geoJson(coviddata).addTo(map);
-        var coviddata = new L.geoJson(datas, { //FIXME: datas NOT WORKING CIRCLES AREN'T POPPING UP 
-            pointToLayer: function(features, ll){
-                return L.circleMarker(ll, {
+        var coviddata = new L.geoJson(datas, {
+            onEachFeature = onEachFeature,  //FIXME
+            pointToLayer: function(feature, latlang){
+               
+                return L.circleMarker(latlang, {
                     color: '#000000',
                     opacity: 1,
                     weight: 2,
                     fillColor: '#ffff8c',
                     fillOpacity: .5,
-                    radius: calcRadius(features.properties.covid)
+                    radius: calcRadius(feature.properties.covid)
                 });
             }
-        })
+        }).addTo(map);
 
-        var provinces = L.geoJson(data,{style:style}).addTo(map);
-        var labFour = L.geoJson(datas).addTo(map);
+      
+        var labFour = L.geoJson(datas);
 
      
+        var legend = L.control({position:'bottomleft'});
+        legend.onAdd = function(map){
+            var div = L.DomUtil.create('div','legend'),
+            grades = [0,5000000,10000000,25000000,50000000];
+            div.innerHTML = '<b>Population 2019<br><br></b>';
+            for (var i = 0; i < grades.length; i++) {        
+                div.innerHTML +=
+                        '<i style="background:' + getColor(grades[i] + 1) + '"></i>' +
+                                  grades[i] + (grades[i + 1] ? '&ndash;' + grades[i + 1] +   '<br><br>' : '+');
+                                                  }return div;
+                      };
+        legend.addTo(map);
         
+        map.on('overlayerremove',function(eventLayer){
+            if(eventLayer.name == 'provinces'){
+                map.removeControl(legend);
+            }
+        });
+        map.on('overlayadd',function(eventLayer){
+            if(eventLayer.name =='provinces'){
+                legend.addTo(map);
+            }
+        });
 
+        var onEachFeature = function(feature, layer){
+            if(feature.properties){
+                var prop = feature.properties;
+                var popup = '<h3>'+prop['Location']+'</h3>'+'<br>Cases Day 1: '+prop['1']+'<br>Cases Day 16: '+prop['covid'];
+                feature.layer = layer;
+                 layer.bindPopup(popup, {maxWidth: "auto"});
+            }
+        };
+
+       
         //Layer Control
         var base = {
             "Light Canvas": canvas,
@@ -77,7 +126,7 @@
         };
        
 
-        L.control.layers(base,overlay).addTo(map);
+        L.control.layers(base,overlay,{collapsed:false}).addTo(map);
 
         function getColor(value){
             return value >50000000? '#54278f':
