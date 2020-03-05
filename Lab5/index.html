@@ -70,7 +70,7 @@
         var provinces = L.geoJson(data,{style:style}).addTo(map);
         // var coviddata = new L.geoJson(coviddata).addTo(map);
         var coviddata = new L.geoJson(datas, {
-            onEachFeature : onEachFeature,  //FIXME
+            onEachFeature : onEachFeature,  //not '=' but ':'
             pointToLayer: function(feature, latlang){
                
                 return L.circleMarker(latlang, {
@@ -123,7 +123,7 @@
         };
         var overlay = {
             "China Provinces": provinces,
-            "Infected Areas": labFour
+            "Infected Areas": coviddata
         };
        
 
