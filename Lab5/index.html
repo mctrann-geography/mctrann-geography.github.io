@@ -59,10 +59,18 @@
         function calcRadius(val){
             return 0.9 * Math.pow(val / minValue, .7) * minRadius;
         }
+        var onEachFeature = function(feature, layer){
+            if(feature.properties){
+                var prop = feature.properties;
+                var popup = '<h3>'+prop['Location']+'</h3>'+'<br>Cases Day 1: '+prop['1']+'<br>Cases Day 16: '+prop['covid'];
+                feature.layer = layer;
+                 layer.bindPopup(popup, {maxWidth: "auto"});
+            }
+        };
         var provinces = L.geoJson(data,{style:style}).addTo(map);
         // var coviddata = new L.geoJson(coviddata).addTo(map);
         var coviddata = new L.geoJson(datas, {
-            onEachFeature = onEachFeature,  //FIXME
+            onEachFeature : onEachFeature,  //FIXME
             pointToLayer: function(feature, latlang){
                
                 return L.circleMarker(latlang, {
@@ -104,14 +112,7 @@
             }
         });
 
-        var onEachFeature = function(feature, layer){
-            if(feature.properties){
-                var prop = feature.properties;
-                var popup = '<h3>'+prop['Location']+'</h3>'+'<br>Cases Day 1: '+prop['1']+'<br>Cases Day 16: '+prop['covid'];
-                feature.layer = layer;
-                 layer.bindPopup(popup, {maxWidth: "auto"});
-            }
-        };
+    
 
        
         //Layer Control
