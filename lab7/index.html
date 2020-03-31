@@ -67,6 +67,15 @@
             }
 
         });
+        var circle = new ol.style.Style({
+            image: new ol.style.Circle({
+            radius: 30,
+            fill: null,
+            stroke: new ol.style.Stroke({
+                color: 'rgba(255,0,0,0.9)',
+            })
+            })
+        });
         var layer = new ol.layer.Vector({
             source: new ol.source.Vector({
                 features: [
@@ -76,17 +85,7 @@
                 ]
             })
         });
-        //TODO: MAKE SHAPE BIGGER AND CHANGE COLOR !
-        // pointStyle = new ol.style.Style({
-        //     image: new ol.style.Point({
-        //         fill: null,
-        //         zIndex:3,
-        //         stroke: new ol.style.Stroke({
-        //             color: '#FF0000',
-        //             width: 2
-        //         })
-        //     })
-        // });
+        layer.setStyle(circle);
         
         map.addLayer(layer);
     </script>
