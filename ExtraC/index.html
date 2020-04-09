@@ -274,14 +274,13 @@ input[type="radio"] + label:before {
     <script src="https://unpkg.com/topojson-client@3"></script>
     <!-- <script type = "module" src="js/main.js"></script> -->
     <script src= "fetchJSON.js"></script>
-    <script src = ""></script>
-    <script type = "module">
+    <script type = "text/javascript">
         // import fetchJsonp from "fetch-jsonp";
-        import chroma from "./node_modules/chroma-js";
+        //import chroma from "./node_modules/chroma-js";
 
-        let china = require("./../data/china-proj.topo.json");
+        let china = require("/data/china-proj.topo.json");
         let topoData = topojson.feature(china, china.objects.provinces).features;
-        let censUrl = require("./../data/2010-census.csv");
+        let censUrl = require("./data/2010-census.csv");
 
         console.log("Geographical Data", topoData);
 
