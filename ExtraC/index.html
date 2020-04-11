@@ -19,6 +19,19 @@
         .leaflet-container{
               background: #222;
           }
+          .info {
+    padding: 6px 8px;
+    font: 14px/16px Arial, Helvetica, sans-serif;
+    background: white;
+    background: transparent;
+    border-radius: 5px;
+    color: white;
+    
+}
+.info h4 {
+    margin: 0 0 5px;
+    color: white;
+}
     </style>
     <!-- <link href="https://fonts.googleapis.com/css?family=Poppins:300,700&display=swap" rel="stylesheet"> -->
 </head>
@@ -88,7 +101,7 @@
         }
         function changeBackground(e){
             console.log(getColor(e.target.feature.properties.Deaths));
-            document.getElementById("map").style.background = getColor(e.target.feature.properties.Deaths) ;
+            document.getElementById("map").style.background = (getColor(e.target.feature.properties.Deaths)=='#FFFFFF'?'#C0C0C0':getColor(e.target.feature.properties.Deaths)) ;
         }
         function onEachFeature(feature, layer) {
 		layer.on({
@@ -116,7 +129,10 @@
     // method that we will use to update the control based on feature properties passed
     info.update = function (props) {
         // this._div.innerHTML = '<h4>China/[insert chinese characters] </h4>' +  (props ?
-        //     '<b>' + props.NAME_PY + '</b><br />' + props.Deaths + ' death(s)');
+        //   '<b>' + props.NAME_PY + '</b><br />' props.Deaths + ' death(s)' : '');
+        this._div.innerHTML = '<h4>China/[insert chinese characters]</h4>' +  (props ?
+        '<b>' + props.NAME_PY + '</b><br />' + props.Deaths + ' death(s) <br /><i style = "font size="1" > without ratio oop</i>'
+        : '');
     };
 
 info.addTo(map);     
