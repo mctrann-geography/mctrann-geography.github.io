@@ -1,0 +1,379 @@
+var datas = {
+   "type": "FeatureCollection",
+   "features": [
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 112.238403,30.737812 ]
+    },
+    "properties": {
+    "Location":"Hubei",
+    "Deaths":3046
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 120.326447,29.159849 ]
+    },
+    "properties": {
+    "Location":"Zhejiang",
+    "Deaths":1
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 113.763283,23.379032 ]
+    },
+    "properties": {
+    "Location":"Guangdong",
+    "Deaths":8
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 113.484016,33.875408 ]
+    },
+    "properties": {
+    "Location":"Henan",
+    "Deaths":22
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 95.934486,36.734131 ]
+    },
+    "properties": {
+    "Location":"Hunan",
+    "Deaths":4
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 117.9249,30.6007 ]
+    },
+    "properties": {
+    "Location":"Anhui",
+    "Deaths":6
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 114.9042,27.0875 ]
+    },
+    "properties": {
+    "Location":"Jiangxi",
+    "Deaths":1
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 106.9123,29.4316 ]
+    },
+    "properties": {
+    "Location":"Chongqing",
+    "Deaths":6
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 119.7889,33.1402 ]
+    },
+    "properties": {
+    "Location":"Jiangsu",
+    "Deaths":0
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 102.8055,30.2638 ]
+    },
+    "properties": {
+    "Location":"Sichuan",
+    "Deaths":3
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 117.9249,35.894 ]
+    },
+    "properties": {
+    "Location":"Shandong",
+    "Deaths":6
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 116.4074,39.9042 ]
+    },
+    "properties": {
+    "Location":"Beijing",
+    "Deaths":8
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 121.4737,31.2304 ]
+    },
+    "properties": {
+    "Location":"Shanghai",
+    "Deaths":3
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 117.9249,26.4837 ]
+    },
+    "properties": {
+    "Location":"Fujian",
+    "Deaths":1
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 128.7382,47.1216 ]
+    },
+    "properties": {
+    "Location":"Heilongjiang",
+    "Deaths":13
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 109.188,35.394 ]
+    },
+    "properties": {
+    "Location":"Shaanxi",
+    "Deaths":1
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 108.8076,23.7248 ]
+    },
+    "properties": {
+    "Location":"Guangxi",
+    "Deaths":2
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 114.9042,37.8957 ]
+    },
+    "properties": {
+    "Location":"Hebei",
+    "Deaths":3
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 101.3431,24.4753 ]
+    },
+    "properties": {
+    "Location":"Yunnan",
+    "Deaths":2
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 109.9497,19.5664 ]
+    },
+    "properties": {
+    "Location":"Hainan",
+    "Deaths":6
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 122.529,41.9437 ]
+    },
+    "properties": {
+    "Location":"Liaoning",
+    "Deaths":1
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 111.8569,37.2426 ]
+    },
+    "properties": {
+    "Location":"Shanxi",
+    "Deaths":0
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 117.3616,39.3434 ]
+    },
+    "properties": {
+    "Location":"Tianjin",
+    "Deaths":3
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 104.2861,35.7518 ]
+    },
+    "properties": {
+    "Location":"Gansu",
+    "Deaths":2
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 107.2903,26.843 ]
+    },
+    "properties": {
+    "Location":"Guizhou",
+    "Deaths":2
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 126.4371,43.152 ]
+    },
+    "properties": {
+    "Location":"Jilin",
+    "Deaths":1
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 115.0595,43.3782 ]
+    },
+    "properties": {
+    "Location":"Inner Mongolia",
+    "Deaths":1
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 106.1581,37.1987 ]
+    },
+    "properties": {
+    "Location":"Ningxia",
+    "Deaths":0
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 87.5396,42.5246 ]
+    },
+    "properties": {
+    "Location":"Xinjiang",
+    "Deaths":3
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 114.1694,22.3193 ]
+    },
+    "properties": {
+    "Location":"Hong Kong SAR",
+    "Deaths":3
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 96.4077,35.7448 ]
+    },
+    "properties": {
+    "Location":"Qinghai",
+    "Deaths":0
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 121.5654,25.033 ]
+    },
+    "properties": {
+    "Location":"Taipei",
+    "Deaths":1
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 113.5439,22.1987 ]
+    },
+    "properties": {
+    "Location":"Macao SAR",
+    "Deaths":0
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 88.7879,30.1534 ]
+    },
+    "properties": {
+    "Location":"Xizang",
+    "Deaths":0
+    }
+  }
+]
+}
