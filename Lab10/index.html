@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1, user-scalable=no" />
+    <title>Visualize features with realistic WebStyleSymbols - 4.14</title>
+
+    <link rel="stylesheet" href="https://js.arcgis.com/4.14/esri/themes/light/main.css" />
+    <script src="https://js.arcgis.com/4.14/"></script>
+    <style>
+        html,
+        body,
+        #viewDiv {
+            padding: 0;
+            margin: 0;
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+
+    <script>
+        require(["esri/WebScene", "esri/views/SceneView", "esri/layers/FeatureLayer", "esri/layers/SceneLayer", "esri/tasks/support/Query"],
+            function (WebScene, SceneView, FeatureLayer, SceneLayer, Query) {
+                var map = new WebScene({
+                    basemap: "satellite",
+                    ground: "world-elevation"
+                });
+                var view = new SceneView({
+                    container: "viewDiv",
+                    map: map,
+                    camera: {
+                        position: {
+                            latitude: 41.6608232,
+                            longitude: -91.537668,
+                            //z: 290 //camera height
+                            z:400 
+                        },
+                        //tilt: 60,
+                        tilt: 45,
+                        //heading: 330 //orientation
+                        heading: 450
+                    },
+                    environment: {
+                        lighting: {
+                            date: new Date("April 15, 2020 9:00:00 EDT"), //CHANGES THE SHADOWS ACCORDING TO TIME.
+                            directShadowsEnabled: true,
+                            ambientOcclusionEnabled: true
+                        }
+                    }
+                });
+                //unique info declaration from esri
+                var uniqueValueInfos = [
+                    {
+                        value: "Crataegussp.",
+                        symbol: {
+                            type: "web-style",//autocastsasnewWebStyleSymbol()
+                            name: "GenericDead",
+                            styleName: "EsriRealisticTreesStyle"
+                        }
+                    },
+                    {
+                        value: "Fraxinuspennsylvanica",
+                        symbol: {
+                            type: "web-style",//autocastsasnewWebStyleSymbol()
+                            name: "Musa", 
+                            styleName: "EsriRealisticTreesStyle"
+                        }
+                    },
+                    {
+                        value: "Piceaabies",
+                        symbol:
+                        {
+                            type: "web-style",//autocastsasnewWebStyleSymbol()
+                            name: "Sequoia", 
+                            styleName: "EsriRealisticTreesStyle"
+                        }
+                    },
+                    {
+                        value: "Gleditsiatriacanthos",
+                        symbol: {
+                            type: "web-style",//autocastsasnewWebStyleSymbol()
+                            name: "Juglans", 
+                            styleName: "EsriRealisticTreesStyle"
+                        }
+                    },
+                    {
+                        value: "Fagusgrandifolia",
+                        symbol:
+                        {
+                            type: "web-style",//autocastsasnewWebStyleSymbol()
+                            name: "Sabal",
+                            styleName: "EsriRealisticTreesStyle"
+                        }
+                    },
+                    {
+                        value: "Quercusmacrocarpa",
+                        symbol:
+                        {
+                            type: "web-style",//autocastsasnewWebStyleSymbol()
+                            name: "Picea",
+                            styleName: "EsriRealisticTreesStyle"
+                        }
+                    },
+                    {
+                        value: "Pinusstrobus",
+                        symbol: {
+                            type: "web-style",//autocastsasnewWebStyleSymbol()
+                            name: "Opuntia", styleName: "EsriRealisticTreesStyle"
+                        }
+                    },
+                    {
+                        value: "Liriodendrontulipifera",
+                        symbol:
+                        {
+                            type: "web-style",//autocastsasnewWebStyleSymbol()
+                            name: "Carnegiea",
+                            styleName: "EsriRealisticTreesStyle"
+                        }
+                    }];
+
+                //add vegetation layer    
+                var vegetationLayer = new FeatureLayer({
+                    url:
+                        "https://maps.facilities.uiowa.edu/arcgis/rest/services/Features/Trees/MapServer/1",
+                    elevationInfo: {
+                        mode: "on-the-ground"
+                    },
+                    render: {
+                        type: "unique-value", //autocasts new UniqueValue Renderer()
+                        field: "Scientific",
+                        defaultSymbol: {
+                            type: "web-style", //autocasts as new WEbStyleSymbol()
+                            name: "Unknown", //default grey trees
+                            styleName: "EsriRealisticTreeStyle"
+                        },
+                        uniqueValueInfos: uniqueValueInfos,
+                        visualVariables: [
+                            {
+                                type: "size",
+                                field: "Height",
+                                axis: "height" // real height of plant from the SIZE field
+                            },
+                            {
+                                type: "rotation",
+                                valueExpression: "random() * 360" //use random rotation so plants look different
+                            }
+                        ]
+                    }
+                });
+
+                var publicparkingLayer = new FeatureLayer({ //added parking layer
+                    url: 
+                    "https://maps.facilities.uiowa.edu/arcgis/rest/services/Features/ParkingMap/MapServer/2"
+                   
+                });
+
+                map.addMany([vegetationLayer,publicparkingLayer]);
+            });
+
+
+    </script>
+
+
+</head>
+
+<body>
+    <div id="viewDiv"></div>
+</body>
+
+</html>
