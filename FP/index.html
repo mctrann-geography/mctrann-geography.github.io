@@ -1,0 +1,106 @@
+<html>
+
+<head>
+    <!-- <link href="style/bootstrap.min.css" rel="stylesheet">
+    <link href="style/bootstrap.css" rel="stylesheet">
+    <link href="style/_bootswatch.scss" rel="stylesheet">
+    <link href="style/_variables.scss" rel="stylesheet"> -->
+
+    <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js" crossorigin=""></script>
+    <script src="https://d3js.org/d3.v5.min.js" charset="utf-8"></script>
+    <script src= "https://rshepard2.github.io/Lab9/data/lnkrds.js"></script>
+
+    <style>
+    </style>
+</head>
+
+
+
+
+<body>
+    <h1>Nebraska Counties and Corona-Virus</h1>
+    <h2></h2>
+</body>
+<script>
+   
+
+    //size of graphic
+    var width = 1200;
+    var height = 800;
+    //insert chlorpeth ramp stuff here
+    var svg = d3.select("body")
+        .append("svg")
+        .attr("width", width)
+        .attr("height", height);
+    //geometry elements
+    var g = svg.append("g");
+
+    // var projection = d3.geoMercator()
+    //     .scale(2850000)
+    //     .rotate([99.9018, 0])
+    //     .center([0, 41.4925])
+    //     .translate([width/2,height/2]); //pixel offset, ensure projection center aligns with viewing area
+
+ var projection = d3.geoMercator()
+        .scale(400) //sets scale of map, smaller the number larger the scale
+        .rotate([96.6327,0]) //long
+        .center([0,40.8497493]) //lang
+        .translate([width/2,height/2]);
+
+    var geoPath = d3.geoPath().projection(projection);
+
+
+    //import nebraska map
+    var nebraskaURL = "https://opendata.arcgis.com/datasets/28b645ee4a404d6e90e140d7a7bc4199_16.geojson";
+    // g.selectAll("path")
+    //     .data(lnkrds.features)
+    //     .enter()
+    //     .append("path")
+    //     .attr("fill", "#ccc")
+    //     .attr("stroke", "#333")
+    //     .attr( "d", geoPath);    
+        console.log(nebraskaURL);
+    d3.json(nebraskaURL, function (counties) {        //FIXME: NOT GOING THROUGH!!!
+        console.log(nebraskaURL);
+        //Bind data and create one path per GeoJSON feature
+        g.selectAll("path")
+            .data(counties.features)
+            .enter()
+            .append("path")
+            attr("stroke", "#333")
+            .attr("d", geoPath);
+
+    });
+   
+    // .translate([])
+    /*TODO:
+    * ADD NEBARSKA COUNTY ON MAP
+    * CONNECT HOSPITAL JSON FILE TO COUNTY FILE TO CASEBYLOCATION FILE TO SOCIAL DISTANCING SCORE FILE
+    * CREATE CHLROPETH MAP OF CASES BY COUNTY DOING SLIDERS?
+    * CREATE SECOND LAYER WITH BEDS AS CIRCLES
+    * CREATE POPUP HOVER OVER EACH COUNTY TO SHOW STATS: CASES, SOCIAL DISTANCE GRADE, 
+    * HEADER WITH OVERALL GRADE OF NEBRASKA
+    */
+    //goal: understand the demand and supplies we have of hospital beds per county/area vs cases
+    //basemap of nebraska
+    //county layer?
+
+    //date of first case of nebraska case - day slider - to April 20th 2020 1) changes color of map OR 2) circle scale ratio with slider?
+    //chlorpeth map of cases in Nebraska counties 
+    //additional layer of hospitals/vents in nebraska # OR SIZE OF BED
+    //popup screen of each county with # of cases & deaths & hospital beds POSSIBLY CLOSEST HOSPITAL &  grade of social distancing per county
+    //constant popup of grade of social distancing for Nebraska 
+    /*
+    * data source
+    * Nebraska county : https://opendata.arcgis.com/datasets/28b645ee4a404d6e90e140d7a7bc4199_16.geojson
+    * https://covid19-nebraska.hub.arcgis.com/
+    * hospital local fcilities: http://dhhs.ne.gov/licensure/Documents/Hospital%20Roster.pdf
+    * data on hospital beds per county https://bateam.maps.arcgis.com/home/item.html?id=1044bb19da8d4dbfb6a96eb1b4ebf629 OR https://services7.arcgis.com/LXCny1HyhQCUSueu/ArcGIS/rest/services/Definitive_Healthcare_USA_Hospital_Beds/FeatureServer/0/query
+    * http://www.communitybenefitinsight.org/?page=info.data_api <--using this hospital bed api sofar
+    * county grade on social distancing: https://www.unacast.com/covid19/social-distancing-scoreboard?view=state&fips=31 OR api: https://opendata.arcgis.com/datasets/ab72fb3e9bf24d9594f0b942718bffeb_0.geojson
+    * corona cases scraper: https://coronadatascraper.com/#timeseries.csv --> https://github.com/covidatlas/coronadatascraper -> https://github.com/covidatlas/coronadatascraper/blob/master/docs/getting_started.md
+    */
+
+</script>
+
+</html>
