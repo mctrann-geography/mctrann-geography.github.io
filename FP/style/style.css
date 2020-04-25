@@ -1,0 +1,8 @@
+path{
+    fill: #ccc;
+    stroke: black;
+
+}
+path.active {
+    fill: yellow;
+}
