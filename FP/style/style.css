@@ -1,8 +1,21 @@
 path{
     fill: #ccc;
     stroke: black;
+    stroke-width: .45px;
 
 }
 path.active {
     fill: yellow;
+}
+
+circle {
+    fill:red;
+    fill-opacity: .5;
+    stroke: black; 
+    stroke-width: .5px;
+}
+#sliderContainer{
+    text-align: center;
+    position: right;
+    top: 700px;
 }
