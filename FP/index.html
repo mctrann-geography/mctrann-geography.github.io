@@ -10,6 +10,7 @@
     <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js" crossorigin=""></script>
     <script src="https://d3js.org/d3.v4.min.js" charset="utf-8"></script>
     <script src="https://d3js.org/topojson.v1.min.js"></script>
+
     <!--FOR THE SLIDER??-->
     <!-- <script src="https://rshepard2.github.io/Lab9/data/lnkrds.js"></script> -->
     <!-- <script src = ""https://mctrann-geography.github.io/FP/data/counties.js""></script> -->
@@ -54,8 +55,9 @@
 
     var countyURL = "https://rshepard2.github.io/simpleNEctys.geojson";
     var casesURL = "https://mctrann-geography.github.io/FP/data/casesOfNebraska.geojson";
+    var caseHospitalizedURL = "https://mctrann-geography.github.io/FP/data/hospitalizedOfNebraska.geojson";
     var hospitalURL = "https://mctrann-geography.github.io/FP/data/hospitalInfo.json";
-    var scoringURL = "https://mctrann-geography.github.io/FP/data/sdScoring.geojson";
+    var scoringURL = "https://mctrann-geography.github.io/FP/data/sdScoringF.geojson";
 
     //county
     d3.json(countyURL, function (error, counties) {
@@ -67,7 +69,7 @@
             .attr("d", geoPath);
 
     });
-
+ 
     //case
     //NEED TO SLIDE THIS
     var caseJSON = svg.append("g");
@@ -95,7 +97,8 @@
             });
     });
 
-    //score
+    // score
+    // TODO: USE QGIS TO FILTER NEBRASKA SCORE ONLY AND CONVERT TO GEOJSON
     var scoreJSON = svg.append("g"); //?? MAY BE A PROBLEM???
     d3.json(scoringURL, function (error, score) {
         scoreJSON.selectAll("path")
