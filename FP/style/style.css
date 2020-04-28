@@ -19,3 +19,16 @@ circle {
     position: right;
     top: 700px;
 }
+/* TODO: MAKE H1 BIGGER? */
+h1, h2 {
+    position: absolute;
+    background: white;
+    left: 10px;
+    font-size: 1.3em;
+}
+h2{
+    top: 30px;
+    font-size: 1em;
+    font-weight: 100;
+}
+/* TODO: STYLE SO IT'S A POPUP */
