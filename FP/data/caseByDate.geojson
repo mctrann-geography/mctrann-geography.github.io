@@ -9,11 +9,11 @@
                 "aggregate": "county",
                 "tz": "America/Chicago",
                 "type": "cases",
-                "Mar2": "40",
-                "Mar23": "50",
-                "Mar31": "85",
-                "April2": "313",
-                "April23": "327"
+                "Mar2": 40,
+                "Mar23": 50,
+                "Mar31": 85,
+                "April2": 313,
+                "April23": 327
             },
             "geometry": {
                 "type": "Point",
@@ -31,11 +31,11 @@
                 "aggregate": "county",
                 "tz": "America/Chicago",
                 "type": "cases",
-                "Mar2": "1",
-                "Mar23": "1",
-                "Mar31": "3",
-                "April2": "100",
-                "April23": "111"
+                "Mar2": 1,
+                "Mar23": 1,
+                "Mar31": 3,
+                "April2": 100,
+                "April23": 111
             },
             "geometry": {
                 "type": "Point",
@@ -53,11 +53,11 @@
                 "aggregate": "county",
                 "tz": "America/Chicago",
                 "type": "cases",
-                "Mar2": "0",
-                "Mar23": "0",
-                "Mar31": "1",
-                "April2": "1",
-                "April23": "1"
+                "Mar2":  0,
+                "Mar23": 0,
+                "Mar31": 1,
+                "April2": 1,
+                "April23": 1
             },
             "geometry": {
                 "type": "Point",
@@ -75,11 +75,11 @@
                 "aggregate": "county",
                 "tz": "America/Denver",
                 "type": "cases",
-                "Mar2": "0",
-                "Mar23": "0",
-                "Mar31": "0",
-                "April2": "0",
-                "April23": "0"
+                "Mar2":  0,
+                "Mar23": 0,
+                "Mar31": 0,
+                "April2": 0,
+                "April23": 0
             },
             "geometry": {
                 "type": "Point",
@@ -97,11 +97,11 @@
                 "aggregate": "county",
                 "tz": "America/Denver",
                 "type": "cases",
-                "Mar2": "0",
-                "Mar23": "0",
-                "Mar31": "0",
-                "April2": "0",
-                "April23": "0"
+                "Mar2":  0,
+                "Mar23": 0,
+                "Mar31": 0,
+                "April2": 0,
+                "April23": 0
             },
             "geometry": {
                 "type": "Point",
@@ -119,11 +119,11 @@
                 "aggregate": "county",
                 "tz": "America/Chicago",
                 "type": "cases",
-                "Mar2": "0",
-                "Mar23": "0",
-                "Mar31": "0",
-                "April2": "0",
-                "April23": "0"
+                "Mar2":  0,
+                "Mar23": 0,
+                "Mar31": 0,
+                "April2": 0,
+                "April23": 0
             },
             "geometry": {
                 "type": "Point",
@@ -141,11 +141,11 @@
                 "aggregate": "county",
                 "tz": "America/Chicago",
                 "type": "cases",
-                "Mar2": "0",
-                "Mar23": "0",
-                "Mar31": "0",
-                "April2": "0",
-                "April23": "0"
+                "Mar2":  0,
+                "Mar23": 0,
+                "Mar31": 0,
+                "April2": 0,
+                "April23": 0
             },
             "geometry": {
                 "type": "Point",
@@ -163,11 +163,11 @@
                 "aggregate": "county",
                 "tz": "America/Denver",
                 "type": "cases",
-                "Mar2": "0",
-                "Mar23": "0",
-                "Mar31": "0",
-                "April2": "1",
-                "April23": "1"
+                "Mar2":  0,
+                "Mar23": 0,
+                "Mar31": 0,
+                "April2": 1,
+                "April23": 1
             },
             "geometry": {
                 "type": "Point",
@@ -185,11 +185,11 @@
                 "aggregate": "county",
                 "tz": "America/Chicago",
                 "type": "cases",
-                "Mar2": "0",
-                "Mar23": "0",
-                "Mar31": "0",
-                "April2": "0",
-                "April23": "0"
+                "Mar2":  0,
+                "Mar23": 0,
+                "Mar31": 0,
+                "April2": 0,
+                "April23": 0
             },
             "geometry": {
                 "type": "Point",
@@ -207,11 +207,11 @@
                 "aggregate": "county",
                 "tz": "America/Chicago",
                 "type": "cases",
-                "Mar2": "0",
-                "Mar23": "0",
-                "Mar31": "0",
-                "April2": "0",
-                "April23": "0"
+                "Mar2":  0,
+                "Mar23": 0,
+                "Mar31": 0,
+                "April2": 0,
+                "April23": 0
             },
             "geometry": {
                 "type": "Point",
@@ -229,11 +229,11 @@
                 "aggregate": "county",
                 "tz": "America/Chicago",
                 "type": "cases",
-                "Mar2": "1",
-                "Mar23": "2",
-                "Mar31": "6",
-                "April2": "55",
-                "April23": "70"
+                "Mar2":  1,
+                "Mar23": 2,
+                "Mar31": 6,
+                "April2": 55,
+                "April23": 70
             },
             "geometry": {
                 "type": "Point",
@@ -251,11 +251,11 @@
                 "aggregate": "county",
                 "tz": "America/Chicago",
                 "type": "cases",
-                "Mar2": "0",
-                "Mar23": "0",
-                "Mar31": "0",
-                "April2": "1",
-                "April23": "1"
+                "Mar2":  0,
+                "Mar23": 0,
+                "Mar31": 0,
+                "April2": 1,
+                "April23": 1
             },
             "geometry": {
                 "type": "Point",
@@ -273,11 +273,11 @@
                 "aggregate": "county",
                 "tz": "America/Chicago",
                 "type": "cases",
-                "Mar2": "0",
-                "Mar23": "0",
-                "Mar31": "0",
-                "April2": "1",
-                "April23": "1"
+                "Mar2":  0,
+                "Mar23": 0,
+                "Mar31": 0,
+                "April2": 1,
+                "April23": 1
             },
             "geometry": {
                 "type": "Point",
@@ -295,11 +295,11 @@
                 "aggregate": "county",
                 "tz": "America/Chicago",
                 "type": "cases",
-                "Mar2": "1",
-                "Mar23": "2",
-                "Mar31": "2",
-                "April2": "5",
-                "April23": "4"
+                "Mar2":  1,
+                "Mar23": 2,
+                "Mar31": 2,
+                "April2": 5,
+                "April23": 4
             },
             "geometry": {
                 "type": "Point",
@@ -317,11 +317,11 @@
                 "aggregate": "county",
                 "tz": "America/Chicago",
                 "type": "cases",
-                "Mar2": "0",
-                "Mar23": "0",
-                "Mar31": "0",
-                "April2": "0",
-                "April23": "0"
+                "Mar2":  0,
+                "Mar23": 0,
+                "Mar31": 0,
+                "April2": 0,
+                "April23": 0
             },
             "geometry": {
                 "type": "Point",
@@ -339,11 +339,11 @@
                 "aggregate": "county",
                 "tz": "America/Denver",
                 "type": "cases",
-                "Mar2": "0",
-                "Mar23": "0",
-                "Mar31": "0",
-                "April2": "0",
-                "April23": "0"
+                "Mar2":  0,
+                "Mar23": 0,
+                "Mar31": 0,
+                "April2": 0,
+                "April23": 0
             },
             "geometry": {
                 "type": "Point",
@@ -361,11 +361,11 @@
                 "aggregate": "county",
                 "tz": "America/Denver",
                 "type": "cases",
-                "Mar2": "0",
-                "Mar23": "0",
-                "Mar31": "0",
-                "April2": "1",
-                "April23": "1"
+                "Mar2":  0,
+                "Mar23": 0,
+                "Mar31": 0,
+                "April2": 1,
+                "April23": 1
             },
             "geometry": {
                 "type": "Point",
@@ -383,11 +383,11 @@
                 "aggregate": "county",
                 "tz": "America/Denver",
                 "type": "cases",
-                "Mar2": "0",
-                "Mar23": "0",
-                "Mar31": "0",
-                "April2": "4",
-                "April23": "5"
+                "Mar2":  0,
+                "Mar23": 0,
+                "Mar31": 0,
+                "April2": 4,
+                "April23": 5
             },
             "geometry": {
                 "type": "Point",
@@ -405,11 +405,11 @@
                 "aggregate": "county",
                 "tz": "America/Chicago",
                 "type": "cases",
-                "Mar2": "0",
-                "Mar23": "0",
-                "Mar31": "0",
-                "April2": "4",
-                "April23": "4"
+                "Mar2":  0,
+                "Mar23": 0,
+                "Mar31": 0,
+                "April2": 4,
+                "April23": 4
             },
             "geometry": {
                 "type": "Point",
@@ -427,11 +427,11 @@
                 "aggregate": "county",
                 "tz": "America/Chicago",
                 "type": "cases",
-                "Mar2": "0",
-                "Mar23": "0",
-                "Mar31": "0",
-                "April2": "5",
-                "April23": "6"
+                "Mar2":  0,
+                "Mar23": 0,
+                "Mar31": 0,
+                "April2": 5,
+                "April23": 6
             },
             "geometry": {
                 "type": "Point",
@@ -449,11 +449,11 @@
                 "aggregate": "county",
                 "tz": "America/Chicago",
                 "type": "cases",
-                "Mar2": "0",
-                "Mar23": "0",
-                "Mar31": "0",
-                "April2": "2",
-                "April23": "3"
+                "Mar2":  0,
+                "Mar23": 0,
+                "Mar31": 0,
+                "April2": 2,
+                "April23": 3
             },
             "geometry": {
                 "type": "Point",
@@ -471,11 +471,11 @@
                 "aggregate": "county",
                 "tz": "America/Chicago",
                 "type": "cases",
-                "Mar2": "0",
-                "Mar23": "0",
-                "Mar31": "0",
-                "April2": "20",
-                "April23": "20"
+                "Mar2":  0,
+                "Mar23": 0,
+                "Mar31": 0,
+                "April2": 20,
+                "April23": 20
             },
             "geometry": {
                 "type": "Point",
@@ -493,11 +493,11 @@
                 "aggregate": "county",
                 "tz": "America/Chicago",
                 "type": "cases",
-                "Mar2": "0",
-                "Mar23": "0",
-                "Mar31": "0",
-                "April2": "51",
-                "April23": "168"
+                "Mar2":  0,
+                "Mar23": 0,
+                "Mar31": 0,
+                "April2": 51,
+                "April23": 168
             },
             "geometry": {
                 "type": "Point",
@@ -515,11 +515,11 @@
                 "aggregate": "county",
                 "tz": "America/Denver",
                 "type": "cases",
-                "Mar2": "0",
-                "Mar23": "0",
-                "Mar31": "0",
-                "April2": "0",
-                "April23": "0"
+                "Mar2":  0,
+                "Mar23": 0,
+                "Mar31": 0,
+                "April2": 0,
+                "April23": 0
             },
             "geometry": {
                 "type": "Point",
@@ -537,11 +537,11 @@
                 "aggregate": "county",
                 "tz": "America/Chicago",
                 "type": "cases",
-                "Mar2": "0",
-                "Mar23": "1",
-                "Mar31": "1",
-                "April2": "172",
-                "April23": "256"
+                "Mar2":  0,
+                "Mar23": 1,
+                "Mar31": 1,
+                "April2": 172,
+                "April23": 256
             },
             "geometry": {
                 "type": "Point",
@@ -559,11 +559,11 @@
                 "aggregate": "county",
                 "tz": "America/Denver",
                 "type": "cases",
-                "Mar2": "0",
-                "Mar23": "0",
-                "Mar31": "0",
-                "April2": "0",
-                "April23": "0"
+                "Mar2":  0,
+                "Mar23": 0,
+                "Mar31": 0,
+                "April2": 0,
+                "April23": 0
             },
             "geometry": {
                 "type": "Point",
@@ -581,11 +581,11 @@
                 "aggregate": "county",
                 "tz": "America/Chicago",
                 "type": "cases",
-                "Mar2": "0",
-                "Mar23": "0",
-                "Mar31": "0",
-                "April2": "1",
-                "April23": "1"
+                "Mar2":  0,
+                "Mar23": 0,
+                "Mar31": 0,
+                "April2": 1,
+                "April23": 1
             },
             "geometry": {
                 "type": "Point",
@@ -603,11 +603,11 @@
                 "aggregate": "county",
                 "tz": "America/Chicago",
                 "type": "cases",
-                "Mar2": "0",
-                "Mar23": "0",
-                "Mar31": "3",
-                "April2": "18",
-                "April23": "41"
+                "Mar2":  0,
+                "Mar23": 0,
+                "Mar31": 3,
+                "April2": 18,
+                "April23": 41
             },
             "geometry": {
                 "type": "Point",
@@ -625,11 +625,11 @@
                 "aggregate": "county",
                 "tz": "America/Denver",
                 "type": "cases",
-                "Mar2": "0",
-                "Mar23": "0",
-                "Mar31": "0",
-                "April2": "0",
-                "April23": "0"
+                "Mar2":  0,
+                "Mar23": 0,
+                "Mar31": 0,
+                "April2": 0,
+                "April23": 0
             },
             "geometry": {
                 "type": "Point",
@@ -647,11 +647,11 @@
                 "aggregate": "county",
                 "tz": "America/Chicago",
                 "type": "cases",
-                "Mar2": "0",
-                "Mar23": "0",
-                "Mar31": "0",
-                "April2": "0",
-                "April23": "1"
+                "Mar2":  0,
+                "Mar23": 0,
+                "Mar31": 0,
+                "April2": 0,
+                "April23": 1
             },
             "geometry": {
                 "type": "Point",
@@ -669,11 +669,11 @@
                 "aggregate": "county",
                 "tz": "America/Chicago",
                 "type": "cases",
-                "Mar2": "0",
-                "Mar23": "0",
-                "Mar31": "0",
-                "April2": "3",
-                "April23": "3"
+                "Mar2":  0,
+                "Mar23": 0,
+                "Mar31": 0,
+                "April2": 3,
+                "April23": 3
             },
             "geometry": {
                 "type": "Point",
@@ -691,11 +691,11 @@
                 "aggregate": "county",
                 "tz": "America/Chicago",
                 "type": "cases",
-                "Mar2": "0",
-                "Mar23": "0",
-                "Mar31": "0",
-                "April2": "0",
-                "April23": "0"
+                "Mar2":  0,
+                "Mar23": 0,
+                "Mar31": 0,
+                "April2": 0,
+                "April23": 0
             },
             "geometry": {
                 "type": "Point",
@@ -713,11 +713,11 @@
                 "aggregate": "county",
                 "tz": "America/Chicago",
                 "type": "cases",
-                "Mar2": "0",
-                "Mar23": "0",
-                "Mar31": "0",
-                "April2": "2",
-                "April23": "2"
+                "Mar2":  0,
+                "Mar23": 0,
+                "Mar31": 0,
+                "April2": 2,
+                "April23": 2
             },
             "geometry": {
                 "type": "Point",
@@ -735,11 +735,11 @@
                 "aggregate": "county",
                 "tz": "America/Chicago",
                 "type": "cases",
-                "Mar2": "0",
-                "Mar23": "0",
-                "Mar31": "0",
-                "April2": "28",
-                "April23": "28"
+                "Mar2":  0,
+                "Mar23": 0,
+                "Mar31": 0,
+                "April2": 28,
+                "April23": 28
             },
             "geometry": {
                 "type": "Point",
@@ -757,11 +757,11 @@
                 "aggregate": "county",
                 "tz": "America/Denver",
                 "type": "cases",
-                "Mar2": "0",
-                "Mar23": "0",
-                "Mar31": "0",
-                "April2": "0",
-                "April23": "0"
+                "Mar2":  0,
+                "Mar23": 0,
+                "Mar31": 0,
+                "April2": 0,
+                "April23": 0
             },
             "geometry": {
                 "type": "Point",
@@ -779,11 +779,11 @@
                 "aggregate": "county",
                 "tz": "America/Chicago",
                 "type": "cases",
-                "Mar2": "0",
-                "Mar23": "0",
-                "Mar31": "0",
-                "April2": "0",
-                "April23": "0"
+                "Mar2":  0,
+                "Mar23": 0,
+                "Mar31": 0,
+                "April2": 0,
+                "April23": 0
             },
             "geometry": {
                 "type": "Point",
@@ -801,11 +801,11 @@
                 "aggregate": "county",
                 "tz": "America/Chicago",
                 "type": "cases",
-                "Mar2": "0",
-                "Mar23": "0",
-                "Mar31": "1",
-                "April2": "6",
-                "April23": "8"
+                "Mar2":  0,
+                "Mar23": 0,
+                "Mar31": 1,
+                "April2": 6,
+                "April23": 8
             },
             "geometry": {
                 "type": "Point",
@@ -823,11 +823,11 @@
                 "aggregate": "county",
                 "tz": "America/Denver",
                 "type": "cases",
-                "Mar2": "0",
-                "Mar23": "0",
-                "Mar31": "0",
-                "April2": "0",
-                "April23": "0"
+                "Mar2":  0,
+                "Mar23": 0,
+                "Mar31": 0,
+                "April2": 0,
+                "April23": 0
             },
             "geometry": {
                 "type": "Point",
@@ -845,11 +845,11 @@
                 "aggregate": "county",
                 "tz": "America/Chicago",
                 "type": "cases",
-                "Mar2": "0",
-                "Mar23": "0",
-                "Mar31": "0",
-                "April2": "0",
-                "April23": "1"
+                "Mar2":  0,
+                "Mar23": 0,
+                "Mar31": 0,
+                "April2": 0,
+                "April23": 1
             },
             "geometry": {
                 "type": "Point",
@@ -867,11 +867,11 @@
                 "aggregate": "county",
                 "tz": "America/Chicago",
                 "type": "cases",
-                "Mar2": "0",
-                "Mar23": "0",
-                "Mar31": "8",
-                "April2": "531",
-                "April23": "647"
+                "Mar2":  0,
+                "Mar23": 0,
+                "Mar31": 8,
+                "April2": 531,
+                "April23": 647
             },
             "geometry": {
                 "type": "Point",
@@ -889,11 +889,11 @@
                 "aggregate": "county",
                 "tz": "America/Chicago",
                 "type": "cases",
-                "Mar2": "0",
-                "Mar23": "0",
-                "Mar31": "0",
-                "April2": "20",
-                "April23": "28"
+                "Mar2":  0,
+                "Mar23": 0,
+                "Mar31": 0,
+                "April2": 20,
+                "April23": 28
             },
             "geometry": {
                 "type": "Point",
@@ -911,11 +911,11 @@
                 "aggregate": "county",
                 "tz": "America/Chicago",
                 "type": "cases",
-                "Mar2": "0",
-                "Mar23": "0",
-                "Mar31": "0",
-                "April2": "0",
-                "April23": "0"
+                "Mar2":  0,
+                "Mar23": 0,
+                "Mar31": 0,
+                "April2": 0,
+                "April23": 0
             },
             "geometry": {
                 "type": "Point",
@@ -933,11 +933,11 @@
                 "aggregate": "county",
                 "tz": "America/Chicago",
                 "type": "cases",
-                "Mar2": "0",
-                "Mar23": "0",
-                "Mar31": "0",
-                "April2": "0",
-                "April23": "0"
+                "Mar2":  0,
+                "Mar23": 0,
+                "Mar31": 0,
+                "April2": 0,
+                "April23": 0
             },
             "geometry": {
                 "type": "Point",
@@ -955,11 +955,11 @@
                 "aggregate": "county",
                 "tz": "America/Chicago",
                 "type": "cases",
-                "Mar2": "0",
-                "Mar23": "0",
-                "Mar31": "0",
-                "April2": "0",
-                "April23": "0"
+                "Mar2":  0,
+                "Mar23": 0,
+                "Mar31": 0,
+                "April2": 0,
+                "April23": 0
             },
             "geometry": {
                 "type": "Point",
@@ -977,11 +977,11 @@
                 "aggregate": "county",
                 "tz": "America/Chicago",
                 "type": "cases",
-                "Mar2": "0",
-                "Mar23": "0",
-                "Mar31": "0",
-                "April2": "0",
-                "April23": "0"
+                "Mar2":  0,
+                "Mar23": 0,
+                "Mar31": 0,
+                "April2": 0,
+                "April23": 0
             },
             "geometry": {
                 "type": "Point",
@@ -999,11 +999,11 @@
                 "aggregate": "county",
                 "tz": "America/Denver",
                 "type": "cases",
-                "Mar2": "0",
-                "Mar23": "0",
-                "Mar31": "0",
-                "April2": "0",
-                "April23": "0"
+                "Mar2":  0,
+                "Mar23": 0,
+                "Mar31": 0,
+                "April2": 0,
+                "April23": 0
             },
             "geometry": {
                 "type": "Point",
@@ -1021,11 +1021,11 @@
                 "aggregate": "county",
                 "tz": "America/Chicago",
                 "type": "cases",
-                "Mar2": "0",
-                "Mar23": "0",
-                "Mar31": "0",
-                "April2": "0",
-                "April23": "0"
+                "Mar2":  0,
+                "Mar23": 0,
+                "Mar31": 0,
+                "April2": 0,
+                "April23": 0
             },
             "geometry": {
                 "type": "Point",
@@ -1043,11 +1043,11 @@
                 "aggregate": "county",
                 "tz": "America/Chicago",
                 "type": "cases",
-                "Mar2": "0",
-                "Mar23": "0",
-                "Mar31": "0",
-                "April2": "0",
-                "April23": "0"
+                "Mar2":  0,
+                "Mar23": 0,
+                "Mar31": 0,
+                "April2": 0,
+                "April23": 0
             },
             "geometry": {
                 "type": "Point",
@@ -1065,11 +1065,11 @@
                 "aggregate": "county",
                 "tz": "America/Chicago",
                 "type": "cases",
-                "Mar2": "0",
-                "Mar23": "0",
-                "Mar31": "0",
-                "April2": "2",
-                "April23": "2"
+                "Mar2":  0,
+                "Mar23": 0,
+                "Mar31": 0,
+                "April2": 2,
+                "April23": 2
             },
             "geometry": {
                 "type": "Point",
@@ -1087,11 +1087,11 @@
                 "aggregate": "county",
                 "tz": "America/Chicago",
                 "type": "cases",
-                "Mar2": "0",
-                "Mar23": "0",
-                "Mar31": "1",
-                "April2": "4",
-                "April23": "4"
+                "Mar2":  0,
+                "Mar23": 0,
+                "Mar31": 1,
+                "April2": 4,
+                "April23": 4
             },
             "geometry": {
                 "type": "Point",
@@ -1109,11 +1109,11 @@
                 "aggregate": "county",
                 "tz": "America/Denver",
                 "type": "cases",
-                "Mar2": "0",
-                "Mar23": "0",
-                "Mar31": "0",
-                "April2": "0",
-                "April23": "0"
+                "Mar2":  0,
+                "Mar23": 0,
+                "Mar31": 0,
+                "April2": 0,
+                "April23": 0
             },
             "geometry": {
                 "type": "Point",
@@ -1131,11 +1131,11 @@
                 "aggregate": "county",
                 "tz": "America/Chicago",
                 "type": "cases",
-                "Mar2": "0",
-                "Mar23": "0",
-                "Mar31": "0",
-                "April2": "0",
-                "April23": "0"
+                "Mar2":  0,
+                "Mar23": 0,
+                "Mar31": 0,
+                "April2": 0,
+                "April23": 0
             },
             "geometry": {
                 "type": "Point",
@@ -1153,11 +1153,11 @@
                 "aggregate": "county",
                 "tz": "America/Denver",
                 "type": "cases",
-                "Mar2": "0",
-                "Mar23": "0",
-                "Mar31": "1",
-                "April2": "10",
-                "April23": "9"
+                "Mar2":  0,
+                "Mar23": 0,
+                "Mar31": 1,
+                "April2": 10,
+                "April23": 9
             },
             "geometry": {
                 "type": "Point",
@@ -1175,11 +1175,11 @@
                 "aggregate": "county",
                 "tz": "America/Chicago",
                 "type": "cases",
-                "Mar2": "2",
-                "Mar23": "2",
-                "Mar31": "2",
-                "April2": "1",
-                "April23": "2"
+                "Mar2": 2,
+                "Mar23": 2,
+                "Mar31": 2,
+                "April2": 1,
+                "April23": 2
             },
             "geometry": {
                 "type": "Point",
@@ -1197,11 +1197,11 @@
                 "aggregate": "county",
                 "tz": "America/Chicago",
                 "type": "cases",
-                "Mar2": "1",
-                "Mar23": "2",
-                "Mar31": "8",
-                "April2": "87",
-                "April23": "106"
+                "Mar2":  1,
+                "Mar23": 2,
+                "Mar31": 8,
+                "April2": 87,
+                "April23": 106
             },
             "geometry": {
                 "type": "Point",
@@ -1219,11 +1219,11 @@
                 "aggregate": "county",
                 "tz": "America/Chicago",
                 "type": "cases",
-                "Mar2": "3",
-                "Mar23": "3",
-                "Mar31": "5",
-                "April2": "18",
-                "April23": "18"
+                "Mar2": 3,
+                "Mar23": 3,
+                "Mar31": 5,
+                "April2": 18,
+                "April23": 18
             },
             "geometry": {
                 "type": "Point",
@@ -1241,11 +1241,11 @@
                 "aggregate": "county",
                 "tz": "America/Chicago",
                 "type": "cases",
-                "Mar2": "0",
-                "Mar23": "0",
-                "Mar31": "0",
-                "April2": "0",
-                "April23": "0"
+                "Mar2":  0,
+                "Mar23": 0,
+                "Mar31": 0,
+                "April2": 0,
+                "April23": 0
             },
             "geometry": {
                 "type": "Point",
@@ -1263,11 +1263,11 @@
                 "aggregate": "county",
                 "tz": "America/Chicago",
                 "type": "cases",
-                "Mar2": "0",
-                "Mar23": "0",
-                "Mar31": "0",
-                "April2": "1",
-                "April23": "1"
+                "Mar2":  0,
+                "Mar23": 0,
+                "Mar31": 0,
+                "April2": 1,
+                "April23": 1
             },
             "geometry": {
                 "type": "Point",
@@ -1285,11 +1285,11 @@
                 "aggregate": "county",
                 "tz": "America/Chicago",
                 "type": "cases",
-                "Mar2": "0",
-                "Mar23": "1",
-                "Mar31": "2",
-                "April2": "11",
-                "April23": "44"
+                "Mar2":  0,
+                "Mar23": 1,
+                "Mar31": 2,
+                "April2": 11,
+                "April23": 44
             },
             "geometry": {
                 "type": "Point",
@@ -1307,11 +1307,11 @@
                 "aggregate": "county",
                 "tz": "America/Chicago",
                 "type": "cases",
-                "Mar2": "0",
-                "Mar23": "0",
-                "Mar31": "0",
-                "April2": "0",
-                "April23": "0"
+                "Mar2":  0,
+                "Mar23": 0,
+                "Mar31": 0,
+                "April2": 0,
+                "April23": 0
             },
             "geometry": {
                 "type": "Point",
@@ -1329,11 +1329,11 @@
                 "aggregate": "county",
                 "tz": "America/Chicago",
                 "type": "cases",
-                "Mar2": "0",
-                "Mar23": "0",
-                "Mar31": "0",
-                "April2": "9",
-                "April23": "9"
+                "Mar2":  0,
+                "Mar23": 0,
+                "Mar31": 0,
+                "April2": 9,
+                "April23": 9
             },
             "geometry": {
                 "type": "Point",
@@ -1351,11 +1351,11 @@
                 "aggregate": "county",
                 "tz": "America/Denver",
                 "type": "cases",
-                "Mar2": "0",
-                "Mar23": "0",
-                "Mar31": "0",
-                "April2": "1",
-                "April23": "1"
+                "Mar2":  0,
+                "Mar23": 0,
+                "Mar31": 0,
+                "April2": 1,
+                "April23": 1
             },
             "geometry": {
                 "type": "Point",
@@ -1373,11 +1373,11 @@
                 "aggregate": "county",
                 "tz": "America/Chicago",
                 "type": "cases",
-                "Mar2": "0",
-                "Mar23": "0",
-                "Mar31": "0",
-                "April2": "1",
-                "April23": "1"
+                "Mar2":  0,
+                "Mar23": 0,
+                "Mar31": 0,
+                "April2": 1,
+                "April23": 1
             },
             "geometry": {
                 "type": "Point",
@@ -1395,11 +1395,11 @@
                 "aggregate": "county",
                 "tz": "America/Chicago",
                 "type": "cases",
-                "Mar2": "1",
-                "Mar23": "1",
-                "Mar31": "1",
-                "April2": "1",
-                "April23": "1"
+                "Mar2":  1,
+                "Mar23": 1,
+                "Mar31": 1,
+                "April2": 1,
+                "April23": 1
             },
             "geometry": {
                 "type": "Point",
@@ -1417,11 +1417,11 @@
                 "aggregate": "county",
                 "tz": "America/Chicago",
                 "type": "cases",
-                "Mar2": "0",
-                "Mar23": "0",
-                "Mar31": "0",
-                "April2": "0",
-                "April23": "0"
+                "Mar2":  0,
+                "Mar23": 0,
+                "Mar31": 0,
+                "April2": 0,
+                "April23": 0
             },
             "geometry": {
                 "type": "Point",
@@ -1439,11 +1439,11 @@
                 "aggregate": "county",
                 "tz": "America/Chicago",
                 "type": "cases",
-                "Mar2": "0",
-                "Mar23": "0",
-                "Mar31": "0",
-                "April2": "1",
-                "April23": "1"
+                "Mar2":  0,
+                "Mar23": 0,
+                "Mar31": 0,
+                "April2": 1,
+                "April23": 1
             },
             "geometry": {
                 "type": "Point",
@@ -1461,11 +1461,11 @@
                 "aggregate": "county",
                 "tz": "America/Chicago",
                 "type": "cases",
-                "Mar2": "0",
-                "Mar23": "0",
-                "Mar31": "0",
-                "April2": "0",
-                "April23": "0"
+                "Mar2":  0,
+                "Mar23": 0,
+                "Mar31": 0,
+                "April2": 0,
+                "April23": 0
             },
             "geometry": {
                 "type": "Point",
@@ -1483,11 +1483,11 @@
                 "aggregate": "county",
                 "tz": "America/Denver",
                 "type": "cases",
-                "Mar2": "0",
-                "Mar23": "0",
-                "Mar31": "0",
-                "April2": "0",
-                "April23": "0"
+                "Mar2":  0,
+                "Mar23": 0,
+                "Mar31": 0,
+                "April2": 0,
+                "April23": 0
             },
             "geometry": {
                 "type": "Point",
@@ -1505,11 +1505,11 @@
                 "aggregate": "county",
                 "tz": "America/Chicago",
                 "type": "cases",
-                "Mar2": "0",
-                "Mar23": "0",
-                "Mar31": "0",
-                "April2": "1",
-                "April23": "1"
+                "Mar2":  0,
+                "Mar23": 0,
+                "Mar31": 0,
+                "April2": 1,
+                "April23": 1
             },
             "geometry": {
                 "type": "Point",
@@ -1527,11 +1527,11 @@
                 "aggregate": "county",
                 "tz": "America/Chicago",
                 "type": "cases",
-                "Mar2": "0",
-                "Mar23": "0",
-                "Mar31": "0",
-                "April2": "1",
-                "April23": "1"
+                "Mar2":  0,
+                "Mar23": 0,
+                "Mar31": 0,
+                "April2": 1,
+                "April23": 1
             },
             "geometry": {
                 "type": "Point",
@@ -1549,11 +1549,11 @@
                 "aggregate": "county",
                 "tz": "America/Chicago",
                 "type": "cases",
-                "Mar2": "0",
-                "Mar23": "0",
-                "Mar31": "1",
-                "April2": "7",
-                "April23": "11"
+                "Mar2":  0,
+                "Mar23": 0,
+                "Mar31": 1,
+                "April2": 7,
+                "April23": 11
             },
             "geometry": {
                 "type": "Point",
@@ -1571,11 +1571,11 @@
                 "aggregate": "county",
                 "tz": "America/Chicago",
                 "type": "cases",
-                "Mar2": "0",
-                "Mar23": "0",
-                "Mar31": "0",
-                "April2": "6",
-                "April23": "6"
+                "Mar2":  0,
+                "Mar23": 0,
+                "Mar31": 0,
+                "April2": 6,
+                "April23": 6
             },
             "geometry": {
                 "type": "Point",
@@ -1593,11 +1593,11 @@
                 "aggregate": "county",
                 "tz": "America/Chicago",
                 "type": "cases",
-                "Mar2": "0",
-                "Mar23": "0",
-                "Mar31": "0",
-                "April2": "1",
-                "April23": "1"
+                "Mar2":  0,
+                "Mar23": 0,
+                "Mar31": 0,
+                "April2": 1,
+                "April23": 1
             },
             "geometry": {
                 "type": "Point",
@@ -1615,11 +1615,11 @@
                 "aggregate": "county",
                 "tz": "America/Chicago",
                 "type": "cases",
-                "Mar2": "0",
-                "Mar23": "0",
-                "Mar31": "0",
-                "April2": "0",
-                "April23": "0"
+                "Mar2":  0,
+                "Mar23": 0,
+                "Mar31": 0,
+                "April2": 0,
+                "April23": 0
             },
             "geometry": {
                 "type": "Point",
@@ -1637,11 +1637,11 @@
                 "aggregate": "county",
                 "tz": "America/Chicago",
                 "type": "cases",
-                "Mar2": "0",
-                "Mar23": "0",
-                "Mar31": "0",
-                "April2": "0",
-                "April23": "0"
+                "Mar2":  0,
+                "Mar23": 0,
+                "Mar31": 0,
+                "April2": 0,
+                "April23": 0
             },
             "geometry": {
                 "type": "Point",
@@ -1659,11 +1659,11 @@
                 "aggregate": "county",
                 "tz": "America/Chicago",
                 "type": "cases",
-                "Mar2": "0",
-                "Mar23": "0",
-                "Mar31": "0",
-                "April2": "8",
-                "April23": "20"
+                "Mar2":  0,
+                "Mar23": 0,
+                "Mar31": 0,
+                "April2": 8,
+                "April23": 20
             },
             "geometry": {
                 "type": "Point",
@@ -1681,11 +1681,11 @@
                 "aggregate": "county",
                 "tz": "America/Chicago",
                 "type": "cases",
-                "Mar2": "3",
-                "Mar23": "6",
-                "Mar31": "16",
-                "April2": "55",
-                "April23": "61"
+                "Mar2": 3,
+                "Mar23": 6,
+                "Mar31": 16,
+                "April2": 55,
+                "April23": 61
             },
             "geometry": {
                 "type": "Point",
@@ -1703,11 +1703,11 @@
                 "aggregate": "county",
                 "tz": "America/Chicago",
                 "type": "cases",
-                "Mar2": "0",
-                "Mar23": "0",
-                "Mar31": "2",
-                "April2": "6",
-                "April23": "8"
+                "Mar2":  0,
+                "Mar23": 0,
+                "Mar31": 2,
+                "April2": 6,
+                "April23": 8
             },
             "geometry": {
                 "type": "Point",
@@ -1725,11 +1725,11 @@
                 "aggregate": "county",
                 "tz": "America/Denver",
                 "type": "cases",
-                "Mar2": "0",
-                "Mar23": "0",
-                "Mar31": "1",
-                "April2": "22",
-                "April23": "23"
+                "Mar2":  0,
+                "Mar23": 0,
+                "Mar31": 1,
+                "April2": 22,
+                "April23": 23
             },
             "geometry": {
                 "type": "Point",
@@ -1747,11 +1747,11 @@
                 "aggregate": "county",
                 "tz": "America/Chicago",
                 "type": "cases",
-                "Mar2": "0",
-                "Mar23": "0",
-                "Mar31": "0",
-                "April2": "2",
-                "April23": "5"
+                "Mar2":  0,
+                "Mar23": 0,
+                "Mar31": 0,
+                "April2": 2,
+                "April23": 5
             },
             "geometry": {
                 "type": "Point",
@@ -1769,11 +1769,11 @@
                 "aggregate": "county",
                 "tz": "America/Denver",
                 "type": "cases",
-                "Mar2": "0",
-                "Mar23": "0",
-                "Mar31": "0",
-                "April2": "0",
-                "April23": "0"
+                "Mar2":  0,
+                "Mar23": 0,
+                "Mar31": 0,
+                "April2": 0,
+                "April23": 0
             },
             "geometry": {
                 "type": "Point",
@@ -1791,11 +1791,11 @@
                 "aggregate": "county",
                 "tz": "America/Chicago",
                 "type": "cases",
-                "Mar2": "0",
-                "Mar23": "0",
-                "Mar31": "0",
-                "April2": "0",
-                "April23": "1"
+                "Mar2":  0,
+                "Mar23": 0,
+                "Mar31": 0,
+                "April2": 0,
+                "April23": 1
             },
             "geometry": {
                 "type": "Point",
@@ -1813,11 +1813,11 @@
                 "aggregate": "county",
                 "tz": "America/Denver",
                 "type": "cases",
-                "Mar2": "0",
-                "Mar23": "0",
-                "Mar31": "0",
-                "April2": "0",
-                "April23": "0"
+                "Mar2":  0,
+                "Mar23": 0,
+                "Mar31": 0,
+                "April2": 0,
+                "April23": 0
             },
             "geometry": {
                 "type": "Point",
@@ -1835,11 +1835,11 @@
                 "aggregate": "county",
                 "tz": "America/Chicago",
                 "type": "cases",
-                "Mar2": "0",
-                "Mar23": "0",
-                "Mar31": "0",
-                "April2": "2",
-                "April23": "2"
+                "Mar2":  0,
+                "Mar23": 0,
+                "Mar31": 0,
+                "April2": 2,
+                "April23": 2
             },
             "geometry": {
                 "type": "Point",
@@ -1857,11 +1857,11 @@
                 "aggregate": "county",
                 "tz": "America/Chicago",
                 "type": "cases",
-                "Mar2": "0",
-                "Mar23": "0",
-                "Mar31": "0",
-                "April2": "0",
-                "April23": "0"
+                "Mar2":  0,
+                "Mar23": 0,
+                "Mar31": 0,
+                "April2": 0,
+                "April23": 0
             },
             "geometry": {
                 "type": "Point",
@@ -1879,11 +1879,11 @@
                 "aggregate": "county",
                 "tz": "America/Chicago",
                 "type": "cases",
-                "Mar2": "0",
-                "Mar23": "0",
-                "Mar31": "0",
-                "April2": "0",
-                "April23": "0"
+                "Mar2":  0,
+                "Mar23": 0,
+                "Mar31": 0,
+                "April2": 0,
+                "April23": 0
             },
             "geometry": {
                 "type": "Point",
@@ -1901,11 +1901,11 @@
                 "aggregate": "county",
                 "tz": "America/Chicago",
                 "type": "cases",
-                "Mar2": "0",
-                "Mar23": "0",
-                "Mar31": "0",
-                "April2": "1",
-                "April23": "0"
+                "Mar2":  0,
+                "Mar23": 0,
+                "Mar31": 0,
+                "April2": 1,
+                "April23": 0
             },
             "geometry": {
                 "type": "Point",
@@ -1923,11 +1923,11 @@
                 "aggregate": "county",
                 "tz": "America/Chicago",
                 "type": "cases",
-                "Mar2": "0",
-                "Mar23": "0",
-                "Mar31": "0",
-                "April2": "0",
-                "April23": "0"
+                "Mar2":  0,
+                "Mar23": 0,
+                "Mar31": 0,
+                "April2": 0,
+                "April23": 0
             },
             "geometry": {
                 "type": "Point",
@@ -1945,11 +1945,11 @@
                 "aggregate": "county",
                 "tz": "America/Chicago",
                 "type": "cases",
-                "Mar2": "0",
-                "Mar23": "2",
-                "Mar31": "19",
-                "April2": "21",
-                "April23": "21"
+                "Mar2":  0,
+                "Mar23": 2,
+                "Mar31": 19,
+                "April2": 21,
+                "April23": 21
             },
             "geometry": {
                 "type": "Point",
@@ -1967,11 +1967,11 @@
                 "aggregate": "county",
                 "tz": "America/Chicago",
                 "type": "cases",
-                "Mar2": "0",
-                "Mar23": "0",
-                "Mar31": "0",
-                "April2": "1",
-                "April23": "1"
+                "Mar2":  0,
+                "Mar23": 0,
+                "Mar31": 0,
+                "April2": 1,
+                "April23": 1
             },
             "geometry": {
                 "type": "Point",
@@ -1989,11 +1989,11 @@
                 "aggregate": "county",
                 "tz": "America/Chicago",
                 "type": "cases",
-                "Mar2": "0",
-                "Mar23": "0",
-                "Mar31": "0",
-                "April2": "2",
-                "April23": "2"
+                "Mar2":  0,
+                "Mar23": 0,
+                "Mar31": 0,
+                "April2": 2,
+                "April23": 2
             },
             "geometry": {
                 "type": "Point",
@@ -2033,11 +2033,11 @@
                 "aggregate": "county",
                 "tz": "America/Chicago",
                 "type": "cases",
-                "Mar2": "0",
-                "Mar23": "0",
-                "Mar31": "1",
-                "April2": "7",
-                "April23": "7"
+                "Mar2":  0,
+                "Mar23": 0,
+                "Mar31": 1,
+                "April2": 7,
+                "April23": 7
             },
             "geometry": {
                 "type": "Point",
