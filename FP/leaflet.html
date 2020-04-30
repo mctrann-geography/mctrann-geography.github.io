@@ -3,7 +3,7 @@
 <html>
 
 <head>
-    <title>LEAFLET FINAL PROJECT</title>
+    <title>Final Project</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" crossorigin="" />
     <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js" crossorigin=""></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -15,65 +15,49 @@
     <script src="https://mctrann-geography.github.io/FP/data/sdScoring.js"></script>
     <script src="https://mctrann-geography.github.io/FP/data/county.js"></script>
     <script src="https://mctrann-geography.github.io/FP/data/baseLayer.js"></script>
-    <!-- <link href="style/style.css" rel="stylesheet"> -->
+    <link href="style/style.css" rel="stylesheet">
 
 </head>
 <style>
-    html,
-    body {
-        margin: 0;
-        padding: 0;
-        height: 100%;
-    }
-#background{
-    background: #c7b9b9;
-
-}
-    #map {
-        min-height: 100%
-    }
-
-    .legend {
-
-
-        padding: 6px 8px;
-        line-height: 18px;
-        background: rgba(255, 255, 255, 0.9);
-        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-        border-radius: 5px;
-    }
-
-    /* Optional: adjust the values below to change the appearance of the legend color boxes */
-
-    .legend i {
-        width: 18px;
-        height: 18px;
-        float: left;
-        margin-right: 8px;
-        opacity: 0.7;
-    }
-    .leaflet-container{
-    background: #c7b9b9;
-}
 </style>
 
-<body id = "background">
-    <h1>Nebraska Counties and Corona-Virus</h1>
+<body id="background">
     <div id="map"></div>
+    <footer id = "footer">
+        <div class = "row">
+          <div class = "col-lg-12">
+           <p>
+              County 
+              <a href="https://rshepard2.github.io/simpleNEctys.geojson" rel="nofollow">Source</a>
+           </p>
+           <p>
+            Cases (found by Dr. Shepard)
+            <a href="https://rshepard2.github.io/simpleNEctys.geojson" rel="nofollow">here</a>
+           </p>
+           <p>
+            Hospital Beds
+            <a href=" https://bateam.maps.arcgis.com/home/item.html?id=1044bb19da8d4dbfb6a96eb1b4ebf629" rel="nofollow">Source</a>
+           </p>
+           <p>
+            Social Distance Scoring
+            <a href="https://opendata.arcgis.com/datasets/ab72fb3e9bf24d9594f0b942718bffeb_0.geojson" rel="nofollow">Source</a>
+           </p>
+           <p>
+            Tutorial on Proportional Legend
+            <a href="https://www.researchgate.net/publication/271079269_Time_Series_Proportional_Symbol_Maps_with_Leaflet_and_jQuery#pf19" rel="nofollow">Source</a>
+           </p>
+          </div>
+        </div>
+      </footer>
     <script type="text/javascript">
-
-        var countyURL = "https://rshepard2.github.io/simpleNEctys.geojson";
         var casesURL = "https://mctrann-geography.github.io/FP/data/caseByDate.geojson";
-        var caseHospitalizedURL = "https://mctrann-geography.github.io/FP/data/hospitalizedOfNebraska.geojson";
-        var hospitalURL = "https://mctrann-geography.github.io/FP/data/hospitalInfo.json";
-        var scoringURL = "https://mctrann-geography.github.io/FP/data/sdScoringF.geojson";
 
+        
+     
         //INTERACTIVE PARTS
 
-        //FIX STLING SO THAT EVEN IF THE SYMBOL IS COVERING A COUNTY THE COUNTY CAN STILL BE HIGHLIGHTED
         function highlightFeature(e) {
             var layer = e.target;
-            // console.log(e.target);
             layer.setStyle({
                 color: 'black',
                 dashArray: '',
@@ -85,7 +69,6 @@
             }
             info.update(layer.feature.properties);
         }
-        //FIXME: reset style goes over the case symbols
         function resetHighlight(e) {
             basemap.resetStyle(e.target);
             info.update("");
@@ -106,6 +89,16 @@
                             grade == "F" ? '#A42727' :
                                 '#ccc'
         }
+        //style
+        function styleScore(feature) {
+            return {
+                fillColor: getColor(feature.properties.grade_distance),
+                weight: 2,
+                opacity: 1,
+                color: 'gray',
+                fillOpacity: 0.9
+            };
+        }
 
         var map = L.map('map', {
             center: [40.8497493, -100],
@@ -116,33 +109,34 @@
         });
         map.doubleClickZoom.disable();
 
-        var legend = L.control({ position: 'bottomright' });
-        legend.onAdd = function (map) {
-            var div = L.DomUtil.create('div', 'legend'),
-                grades = ["A", "B", "C", "D", "F", "Not Avaiable"];
-            div.innerHTML = '<b>Social Distancing Score<br><br></b>';
-            for (var i = 0; i < grades.length; i++) {
-                div.innerHTML +=
-                    '<i style="background:' + getColor(grades[i]) + '"></i>' +
-                    grades[i] + '<br><br>'
-            } return div;
+        //TITLE OF MAP
+        var title = L.control({ position: 'topleft' });
+        title.onAdd = function (map) {
+            this._div = L.DomUtil.create('div', 'title'); // create a div with a class "info"
+            this.update();
+            return this._div;
         };
-        legend.addTo(map);
+        title.update = function (props) {
+
+            this._div.innerHTML = '<h1>Nebraska Counties and Corona-Virus in a Month <h1>'
+            // console.log(props);
+        };
+        title.addTo(map);
+
+
         //county
-        //TODO: UPDATE POLYGON TYPE
         var basemap = L.geoJson(base,
             {
                 style: styleScore,
-                onEachFeature: onEachFeature
+                onEachFeature: onEachFeature,
+                copyright: "MickeyMap, Sources: internet (tbh so many see in footer)"
             }).addTo(map);
 
 
-        var score = L.geoJson(scores, {
-            style: styleScore,
-            onEachFeature: onEachFeature
-        });
-        console.log("score loaded.");
 
+        //making case layer always on top
+        map.createPane('cases');
+        map.getPane('cases').style.zIndex = 650; //????
 
 
         //using jquery
@@ -154,14 +148,13 @@
                 createPropSymbols(info.timestamps, data);
                 // console.log(info.timestamps);
                 createSliderUI(info.timestamps);
-
+                createSymbolLegend(info.min, info.max);
                 console.log("case load");
             }
         );
 
         function processData(data) {
             var timestamps = [];  // square brackets to define an array of data
-            // because there are multiple timestamps
             var min = Infinity; // for the min, begin with the largest possible value - infinity
             var max = -Infinity;// for the max, begin with the smallest possible value - negative infinity
 
@@ -179,8 +172,7 @@
                         attribute != 'geometry' &&
                         attribute != 'aggregate' &&
                         attribute != 'tz' &&
-                        attribute != 'type')   
-                    {
+                        attribute != 'type') {
                         if ($.inArray(attribute, timestamps) === -1) { // JQuery in.Array() method searches for a specified value within an array and return its index (or -1 if not found)
                             // here, the new timestamp is only added when it is not already in the array
                             // triple equals === compares both type and value
@@ -207,58 +199,44 @@
 
             casePoint = L.geoJson(data, {
 
-                // By default, Leaflet draws geojson points as simple markers
-                // To alter this, the pointToLayer function needs to be used
+                //STYLE POINTS OF CASES
                 pointToLayer: function (feature, latlng) {
-                    return L.circleMarker(latlng, { // we use circle marker for the points
-                        fillColor: "#ff0000",  // fill color of the circles
-                        color: '#8D021F',      // border color of the circles
-                        weight: 2,             // circle line weight in pixels
-                        fillOpacity: 0.5       // fill opacity (0-1)
-                    }).on({
-                        mouseover: function (e) {
-                            this.openPopup();
-                            this.setStyle({ fillColor: 'green', color: '#8D021F' });  // fill color turns green when mouseover
-                        },
-                        mouseout: function (e) {
-                            this.closePopup();
-                            this.setStyle({ fillColor: '#ff0000' });  // fill turns original color when mouseout
-                        }
+                    return L.circleMarker(latlng, {
+                        fillColor: "#ff0000",
+                        color: '#8D021F',
+                        weight: 2,
+                        fillOpacity: 0.5,
+                        interactive: false, //Set false so basemap layer can 
+                        pane: 'cases' //making sure this layer is on top always
                     });
                 }
             }).addTo(map);
-
             updatePropSymbols(timestamps[0]); //originally LOADS day 1 
-            // When loaded, the map will first show proportional symbols with the first timestamp's data
         }
         function createSliderUI(timestamps) {
-            var sliderControl = L.control({ position: 'topright' }); // position of the slider
-            // Another use of L.control :)
+            var sliderControl = L.control({ position: 'topright' });
             sliderControl.onAdd = function (map) {
-                //initialize a range slider with mousedown control
                 var slider = L.DomUtil.create("input", "range-slider");
                 L.DomEvent.addListener(slider, 'mousedown', function (e) {
                     L.DomEvent.stopPropagation(e);
                 });
 
-                // Define the labels of the time slider as an array of strings
-                // Modify this for your data
                 var labels = ["March 20", "March 23", " March 31", "April 2", "April 23"];
-                //'this' is slider object
+
                 $(slider)
                     .attr({
                         'type': 'range',
-                        'max': timestamps[timestamps.length-1], //NEED TO BE VALUES?
-                        'min': timestamps[0], //NEED TO BE VALUES?
-                        'step': 1, // Change this to match the numeric interval between adjacent timestamps
+                        'max': timestamps[timestamps.length - 1],
+                        'min': timestamps[0],
+                        'step': 1,
                         'value': String(timestamps[0])
                     })
                     .on('input change', function () {
-                        updatePropSymbols($(this).val().toString()); 
-                        var i = $.inArray(this.value, timestamps); //trying to return the slot where date is...BUT VALUE IS NOT DATE SO IT CANT FIND IT?
-                        $(".temporal-legend").text(labels[i]); // automatic update the label for the timestamp
+                        updatePropSymbols($(this).val().toString());
+                        var i = $.inArray(this.value, timestamps);
+                        $(".temporal-legend").text(labels[i]);
                     });
-               
+
                 return slider;
 
             }
@@ -269,8 +247,7 @@
 
 
         function createTimeLabel(startTimestamp) {
-            var temporalLegend = L.control({ position: 'topright' }); // same position as the slider
-            // One more use of L.control !!
+            var temporalLegend = L.control({ position: 'topright' });
             temporalLegend.onAdd = function (map) {
                 var output = L.DomUtil.create("output", "temporal-legend");
                 $(output).text(startTimestamp);
@@ -280,34 +257,28 @@
         }
         // The function to update/resize each circle marker according to a value in the time series
         function updatePropSymbols(timestamp) {
-            casePoint.eachLayer(function (layer) {  // eachLayer() is an Leaflet function to iterate over the layers/points of the map
+            casePoint.eachLayer(function (layer) {
 
-                var props = layer.feature.properties;   // contains each object
-                var radius = calcPropRadius(props[timestamp]); // circle radius, calculation function defined below
-                // console.log( props); 
-                // console.log("VALUE of DAY: " + props[timestamp]); //supposed to call on the date attribute in prop object
+                var props = layer.feature.properties;
+                var radius = calcPropRadius(props[timestamp]);
 
-                // pop-up information (when mouseover) for each city is also defined here
-                // var popupContent = props.county + ': ' + ' cases: ' + String(props[timestamp]);
-
-                layer.setRadius(radius);  // Leaflet method for setting the radius of a circle
-                // layer.bindPopup(popupContent, { offset: new L.Point(0, -radius) }); // bind the popup content, with an offset
+                layer.setRadius(radius);
             });
         }
 
         // calculate the radius of the proportional symbols based on area
         function calcPropRadius(attributeValue) {
 
-            var scaleFactor = 20;   // the scale factor is used to scale the values; the units of the radius are in meters
-            // you may determine the scale factor accordingly based on the range of the values and the mapping scale
+            var scaleFactor = 20;   // the scale factor is used to scale the values; 
             var area = attributeValue * scaleFactor;
 
             return Math.sqrt(area / Math.PI);  // the function return the radius of the circle to be used in the updatePropSymbols()
         }
-        //POPUP on side    
+
+        //POPUP info on side    
         var info = L.control({ position: 'bottomleft' });
         info.onAdd = function (map) {
-            this._div = L.DomUtil.create('div', 'info'); // create a div with a class "info"
+            this._div = L.DomUtil.create('div', 'info');
             this.update();
             return this._div;
         };
@@ -315,31 +286,74 @@
         info.update = function (props) {
 
             this._div.innerHTML = '<h1>County Info<h1>' + (props ?
-                '<p><b> County Name: ' + props.NAME10 + '</b> <br />' + ' Social Distance Score:  ' + props.grade_total + "<br /> " + props.Sum_BEDCT + ' hospital beds </p>'
+                '<p class = "smaller-text" ><b> County Name: ' + props.NAME10 + '</b> <br />'  + props.Sum_BEDCT + ' hospital beds </p>'
                 : '');
-            // console.log(props);
         };
         info.addTo(map);
 
+        function calcLegendRadius(val) {
 
-        function styleScore(feature) {
-            return {
-                fillColor: getColor(feature.properties.grade_distance),
-                weight: 2,
-                opacity: 1,
-                color: 'gray',
-                fillOpacity: 0.9
-            };
+            var radius = Math.sqrt(val / Math.PI);
+            return radius * .04;
+
         }
-        function styleBase(feature) {
-            return {
-                fillColor: 'gray',
-                weight: 2,
-                opacity: 1,
-                color: 'gray',
-                fillOpacity: 0.9
+
+        //score legend
+        var legend = L.control({ position: 'bottomright' });
+        legend.onAdd = function (map) {
+            var div = L.DomUtil.create('div', 'legend'),
+                grades = ["A", "B", "C", "D", "F", "Not Avaiable"];
+            div.innerHTML = '<b>Social Distancing Score<br><br></b>';
+            for (var i = 0; i < grades.length; i++) {
+                div.innerHTML +=
+                    '<i style="background:' + getColor(grades[i]) + '"></i>' +
+                    grades[i] + '<br><br>'
+            } return div;
+        };
+        legend.addTo(map);
+
+        //Legend for prop symbols: 
+        function createSymbolLegend(min, max) {
+            if (min < 10) {
+                min = 10;
+            }
+            function roundNumber(inNumber) {
+                return (Math.round(inNumber / 10) * 10);
+            }
+            var legendSymbol = L.control({ position: 'bottomright' });
+            legendSymbol.onAdd = function (map) {
+                var legendContainer = L.DomUtil.create("div", "legendSymbol");
+                var symbolsContainer = L.DomUtil.create("div", "symbolsContainer");
+                var classes = [roundNumber(min), roundNumber((max - min) / 2), roundNumber(max)];
+                var legendCircle;
+                var lastRadius = 0;
+                var currentRadius;
+                var margin;
+
+                L.DomEvent.addListener(legendContainer, 'mousedown', function (e) {
+                    L.DomEvent.stopPropagation(e);
+                });
+
+                $(legendContainer).append("<h2 id='legendTitle'> Number of Cases per County </h2>");
+                for (var i = 0; i <= classes.length - 1; i++) {
+                    legendCircle = L.DomUtil.create("div", "legendCircle");
+                    currentRadius = calcPropRadius(classes[i]);
+                    margin = -currentRadius - lastRadius - 2;
+                    $(legendCircle).attr("style", "width: " + currentRadius * 2 +
+                        "px; height: " + currentRadius * 2 + "px; margin-left: " + margin + "px");
+                    $(legendCircle).append("<span class='legendValue'>" + classes[i] + "</span>");
+                    $(symbolsContainer).append(legendCircle);
+                    lastRadius = currentRadius;
+                }
+                $(legendContainer).append(symbolsContainer);
+                return legendContainer;
+
             };
+            legendSymbol.addTo(map);
         }
+
+
+
 
 //TIP: open refine for converting geojson --> csv
     </script>
