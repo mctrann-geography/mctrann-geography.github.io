@@ -127,7 +127,7 @@ var base = {
                 "Sum_hospit": "13980",
                 "Sum_HOSPOR": "9474",
                 "Sum_hosp_1": "8",
-                "Sum_BEDCT": "2566",
+                "Sum_BEDCT": "0",
                 "OBJECTID": "",
                 "state_fips": "31",
                 "state_name": "",
