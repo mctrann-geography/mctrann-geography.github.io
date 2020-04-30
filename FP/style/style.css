@@ -1,34 +1,73 @@
-path{
-    fill: #ccc;
-    stroke: black;
-    stroke-width: .45px;
+html,
+    body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
 
-}
-path.active {
-    fill: yellow;
-}
+    #background {
+        background: #c7b9b9;
 
-circle {
-    fill:red;
-    fill-opacity: .5;
-    stroke: black; 
-    stroke-width: .5px;
-}
-#sliderContainer{
-    text-align: center;
-    position: right;
-    top: 700px;
-}
-/* TODO: MAKE H1 BIGGER? */
-h1, h2 {
-    position: absolute;
-    background: white;
-    left: 10px;
-    font-size: 1.3em;
-}
-h2{
-    top: 30px;
-    font-size: 1em;
-    font-weight: 100;
-}
-/* TODO: STYLE SO IT'S A POPUP */
+    }
+
+    #map {
+        min-height: 100%
+    }
+
+    .legend {
+
+
+        padding: 6px 8px;
+        line-height: 18px;
+        background: rgba(255, 255, 255, 0.9);
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+    }
+
+    /* Optional: adjust the values below to change the appearance of the legend color boxes */
+
+    .legend i {
+        width: 18px;
+        height: 18px;
+        float: left;
+        margin-right: 8px;
+        opacity: 0.7;
+    }
+
+    .leaflet-container {
+        background: #c7b9b9;
+    }
+  
+  .legendSymbol, .temporal-legend{
+    padding: 6px 10px;
+    background: whitesmoke;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    
+  }  
+  #legendTitle{
+      text-align: center;
+      margin-bottom: 15px;
+  }
+  .symbolsContainer{
+      float:right;
+      margin-right: 80px;
+
+  }
+  .legendCircle{
+      border-radius: 50%;
+      border: 1px solid #8D021F;
+      background:#ff0000;
+      opacity: .35;
+      display: inline-block;
+  }
+  .legendValue{
+      position: absolute;
+      right:30px;
+      font-weight:bold;
+      color: black;
+
+  }
+  .smaller-text{
+      font: normal 14px Georgia, serif;  
+  }
