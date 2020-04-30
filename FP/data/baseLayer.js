@@ -1063,7 +1063,7 @@ var base = {
                 "Sum_hospit": "1774",
                 "Sum_HOSPOR": "1372",
                 "Sum_hosp_1": "1",
-                "Sum_BEDCT": "25",
+                "Sum_BEDCT": "2566",
                 "OBJECTID": "2005",
                 "state_fips": "31",
                 "state_name": "Nebraska",
